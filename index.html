@@ -3,7 +3,7 @@
     <head>
 
         <meta charset="utf-8">
-
+        <link rel="icon" type="image/png" href="images/logo1.png" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -56,44 +56,11 @@
           </div>
 
         </div>
-        <script>
-          var CalgaryLocation = {
-            Name:"Calgary",
-            Latitude: "51.0486",
-            Longitude: "- 114.0708",
-            Population: "1,096,833",
-            Area: "825.29 SqKM",
-            Density: 'Population/Area'
-          };
-          var CalgaryLocation = {
-            Name:"Edmonton",
-            Latitude: "53.5444",
-            Longitude: "- 113.4909",
-            Population: "960,015",
-            Area: " 684.37 SqKM",
-            Density: 'Population/Area'
-          };
-          var circleCalgary = document.getElementById('hoverCircle');
-          var circleEdmonton = document.getElementById('hoverCircle2');
 
-          var mapBox = document.getElementById('mapBox');
+        <!-- SWITCH BETWEEN Javascript and JQuery -->
+        
+        <script src="javascript.js"></script>
+        <!-- <script src="jquery.js"></script> -->
 
-          circleCalgary.onmouseover = function() {
-            mapBox.style.color = "#444444";
-            mapBox.innerHTML = "<div class='innerBoxInfo'>Name: Calgary,<br><br>Latitude: 51.0486,<br><br>Population: 1,096,833,<br><br>Longitude: - 114.0708,<br><br>Area: 825.29 SqKM,<br><br>Density: Population/Area</div>"
-          }
-          circleCalgary.onmouseout = function() {
-            mapBox.innerHTML = '';
-          }
-
-          circleEdmonton.onmouseover = function() {
-            mapBox.style.color = "#444444";
-            mapBox.innerHTML = "<div class='innerBoxInfo'>Name: Edmonton,<br><br>Latitude: 53.5444,<br><br>Population: 960,015,<br><br>Longitude: - 113.4909,<br><br>Area: 684.37 SqKM,<br><br>Density: Population/Area</div>"
-          }
-          circleEdmonton.onmouseout = function() {
-            mapBox.innerHTML = '';
-          }
-
-        </script>
     </body>
 </html>
